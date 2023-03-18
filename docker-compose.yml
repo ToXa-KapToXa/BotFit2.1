@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  tg_bot:
+    build:
+      dockerfile:
+        tg_bot/Dockerfile
+    volumes:
+      - C:/Users/Timerlan/PycharmProjects/BotFit2.0/db:/opt/app/db
+    network_mode: "host"
